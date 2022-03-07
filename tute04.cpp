@@ -13,7 +13,7 @@ Do not modify the main function.*/
 
 #include <iostream>
 
-long Factorial(int no);
+long factorial(int no);
 long nCr(int n, int r);
 
 int main() {
@@ -39,5 +39,5 @@ long factorial(int no)
 
 long nCr(int n, int r)
 {
-  return factorial(n)/ (factorial(r) * factorial(n-r));
+  return factorial(n)/factorial(r) * (factorial(n)-factorial(r));
 }
